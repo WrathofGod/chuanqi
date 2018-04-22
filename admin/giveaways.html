@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>后台管理-礼包列表</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<body>
+  <div class="header">欢迎使用后台系统</div>
+  <div class="content">
+    <ul class="nav">
+      <li><a href="banner.html">Banner图设置</a></li>
+      <li><a href="news.html">新闻列表</a></li>
+      <li><a href="givaways.html">礼包上传</a></li>
+    </ul>
+    <div class="main">
+      <button type="button" class="add_banner">添加礼包</button>
+      <ul class="news_list giveaways">
+        <li><span>ID</span><span>礼包名称</span><span>图片</span><span>排序</span><span>是否上架</span></li>
+        <li><span>1</span><span>礼包名称</span><span><img src="img/banner.jpg"></span><span>1</span><span>是</span></li>
+        <li><span>2</span><span>礼包名称</span><span><img src="img/banner.jpg"></span><span>1</span><span>是</span></li>
+        <li><span>3</span><span>礼包名称</span><span><img src="img/banner.jpg"></span><span>1</span><span>是</span></li>
+        <li><span>4</span><span>礼包名称</span><span><img src="img/banner.jpg"></span><span>1</span><span>是</span></li>
+      </ul>
+    </div>
+  </div>
+<script>
+$('.add_banner').click(function(){
+  window.location.href = 'banner_detail.html';
+})
+$('.banner li').click(function(){
+  window.location.href = 'banner_detail.html';
+})
+</script>
+</body>
+
+</html>

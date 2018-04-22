@@ -1,0 +1,147 @@
+a{
+  text-decoration: none;
+  color:inherit;
+  display:block;
+}
+ul,li{
+  list-style: none;
+}
+body{
+  min-width:1366px;
+}
+.header{
+  box-sizing: border-box;
+  width:100%;
+  height:80px;line-height:80px;
+  border-bottom:2px solid #000;
+  background-color:#666;
+  color:#fff;
+  font-size:30px;
+  padding-left:40px;
+}
+.content{
+  overflow:auto;
+  width:100%;
+}
+.nav,.main{
+  height:100%;
+}
+.nav{
+  width:180px;
+  padding:15px;
+  border-right:2px solid #000;
+  position:absolute;
+  left:0;
+  top:82px;
+}
+.nav li{
+  color:#000;
+  list-style: none;
+  height:40px;line-height:40px;
+  cursor:pointer;
+  padding-left:10px;
+}
+.nav li:hover{
+  background-color:#000;
+  color:#fff;
+}
+.main{
+  margin-left:211px;
+  padding:20px 15px;
+}
+.main .add_news{
+  width:100px;height:40px;
+  font-size:20px;
+  margin-bottom:30px;
+  display:block;
+}
+
+.main .news_list li{
+  overflow:hidden;
+  text-align:center;
+  text-overflow: ellipsis;
+  line-height:40px;
+  cursor:pointer;
+  border-bottom:1px dashed #444;
+}
+.main .news_list li:hover{
+  background-color:#444;
+  color:#fff;
+}
+.main .news_list li:nth-of-type(1){
+  font-weight:bold;
+}
+.main .news_list li>span{
+  display:block;float:left;
+}
+.main .news_list li>span:nth-child(1){
+  width:10%;
+}
+.main .news_list li>span:nth-child(2){
+  width:30%;
+}
+.main .news_list li>span:nth-child(3){
+  width:10%;
+}
+.main .news_list li>span:nth-child(4){
+  width:20%;
+}
+.main .news_list li>span:nth-child(5){
+  width:20%;
+}
+.main .news_list li>span:nth-child(6){
+  width:10%;
+}
+/*新闻详情*/
+.main h1{
+  font-size:20px;
+  margin-bottom:30px;
+}
+.main .news_detail{
+  padding-left:15px;
+}
+.main .news_detail .row{
+  min-height:50px;line-height:50px;
+  overflow:hidden;
+}
+.main .news_detail .row>span{
+  display:block;float:left;
+  width:100px;
+  text-align:right;
+  font-weight:bold;
+}
+.main .news_detail .row>div{
+  float:left;
+  padding-left:15px;
+}
+.main .news_detail .row>div select,.main .news_detail .row>div input{
+  height:30px;margin-top:10px;
+}
+.main .news_detail .row>div input{
+  padding-left:5px;
+}
+.main .news_detail .row>div textarea{
+  width:400px;height:400px;
+}
+.main .news_detail button{
+  display:block;
+  margin-top:20px;
+}
+/*banner*/
+.news_list.banner li img,.news_list.giveaways li img{
+  width:300px;display:block;
+}
+.news_list.banner li:hover，.news_list.giveaways li:hover{
+  background-color:#eee;
+  color:#000;
+}
+/*礼包*/
+.news_list.giveaways li>span:nth-child(2){
+  width:20%;
+}
+.news_list.giveaways li>span:nth-child(3){
+  width:30%;
+}
+.news_list.giveaways li>span:nth-child(4){
+  width:10%;
+}

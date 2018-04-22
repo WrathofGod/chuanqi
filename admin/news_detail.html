@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>后台管理-新闻详情</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/admin.css">
+<link rel="stylesheet" href="kindeditor-4.1.7/themes/default/default.css" />
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script charset="utf-8" src="kindeditor-4.1.7/kindeditor-min.js"></script>
+<script charset="utf-8" src="kindeditor-4.1.7/lang/zh_CN.js"></script>
+<body>
+  <div class="header">欢迎使用后台系统</div>
+  <div class="content">
+    <ul class="nav">
+      <li><a href="">Banner图设置</a></li>
+      <li><a href="">新闻列表</a></li>
+      <li><a href="">礼包上传</a></li>
+    </ul>
+    <div class="main">
+      <h1>新闻详情</h1>
+      <form action="">
+        <div class="news_detail">
+          <div class="row">
+            <span>类别：</span>
+            <div>
+              <select name="" id="">
+                <option value="">新闻</option>
+                <option value="">公告</option>
+                <option value="">攻略</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <span>是否显示：</span>
+            <div>
+              <select name="" id="">
+                <option value="">是</option>
+                <option value="">否</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <span>标题：</span>
+            <div><input type="text" placeholder="请输入文章标题"></div>
+          </div>
+          <div class="row">
+            <span>内容：</span>
+            <div><textarea name="news_content" class="xheditor"></textarea></div>
+          </div>
+          <button>确认提交</button>
+        </div>
+      </form>
+    </div>
+  </div>
+<script>
+$(document).ready(function(){
+  KindEditor.ready(function(K) {
+    editor_zh_cs = K.create('textarea[name="news_content"]', {
+      //cssPath : 'kindeditor-4.1.7/plugins/code/prettify.css',
+      uploadJson : 'kindeditor-4.1.7/php/upload_json.php',
+      fileManagerJson : 'kindeditor-4.1.7/php/file_manager_json.php',
+      allowFileManager : true,
+      items:[
+        'source', '|', 'undo', 'redo', '|', 'preview', 'print', 'template', 'code', 'cut', 'copy', 'paste',
+        'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+        'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+        'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+        'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+        'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+        'table', 'hr', 'emoticons', 'pagebreak',
+        'anchor', 'link', 'unlink', '|', 'about'
+      ]
+    });
+  });
+});
+</script>
+</body>
+</html>
