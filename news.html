@@ -1,0 +1,114 @@
+﻿<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>我是传奇-新闻列表</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <body class="news_list">
+    <div class="header">
+      <div class="content">
+        <a href=""><h1>官网首页</h1><span>HOME</span></a>
+        <a href=""><h1>储值大厅</h1><span>CHARGE</span></a>
+        <a href="support.html"><h1>客服中心</h1><span>SUPPORT</span></a>
+        <a href=""><h1>礼包领取</h1><span>GIVEAWAYS</span></a>
+      </div>
+    </div>
+    <div class="content">
+      <img src="images/logo.png" class="logo">
+      <div class="list">
+        <div class="news_top">
+          <div class="active">全部<span>All</span></div>
+          <div>新闻<span>News</span></div>
+          <div>公告<span>Notices</span></div>
+          <div>攻略<span>Guide</span></div>
+        </div>
+        <!-- 全部 -->
+        <div class="news_bottom">
+          <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <div class="pages">
+            <span><</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>></span>
+          </div>
+        </div>
+        <!-- 新闻 -->
+        <div class="news_bottom" style="display:none">
+          <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <div class="pages">
+            <span><</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>></span>
+          </div>
+        </div>
+        <!-- 公告 -->
+        <div class="news_bottom" style="display:none">
+          <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <div class="pages">
+            <span><</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>></span>
+          </div>
+        </div>
+        <!-- 攻略 -->
+        <div class="news_bottom" style="display:none">
+          <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          <div class="pages">
+            <span><</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer"></div>
+  </body>
+  <script>
+    $('.news_top div').click(function(){
+      var index = $(this).index();
+      $(this).addClass('active').siblings().removeClass('active')
+      $('.news_bottom').hide().eq(index).show();
+    })
+  </script>
+</html>

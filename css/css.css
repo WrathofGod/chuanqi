@@ -1,3 +1,7 @@
+
+html{
+  background-color:#000;
+}
 body{
   background-color:#000;
   background:url(../images/bg.jpg) center top no-repeat;
@@ -28,7 +32,7 @@ a{
   line-height:80px;
   text-align:center;
 }
-.header>.content a:hover{
+.header>.content a:hover,.header>.content a.active{
   color:#fec542;
   background:url(../images/btn_active.png) center top no-repeat;
 }
@@ -50,12 +54,12 @@ a{
 body>.content{
   position:relative;
   width:1200px;
-  height:1083px;
-  margin:0 auto;
+  min-height:1083px;
+  margin:200px auto 0;
 }
 body>.content .logo{
   position: absolute;
-  top: -89px;
+  top: -290px;
   left: 474px;
 }
 .content>.middle{
@@ -63,7 +67,7 @@ body>.content .logo{
   margin:0 auto;
   background:url(../images/middle_bg.png) center no-repeat;
   position: relative;
-  top: 488px;
+  top: 281px;
 }
 .content>.middle .middle_wrap{
   width:640px;
@@ -100,7 +104,7 @@ body>.content .logo{
 }
 .news_wrap{
   position:relative;
-  top:500px;
+  top:300px;
   width:100%;
   overflow:hidden;
 }
@@ -143,8 +147,9 @@ body>.content .logo{
   text-align:center;
   line-height:52px;
   margin-left:10px;
+  cursor: pointer;
 }
-.news_wrap .news_top div:hover{
+.news_wrap .news_top div:hover,.news_wrap .news_top div.active{
   border-bottom:4px solid #ff9600;
 }
 .news_wrap .news_top div span{
@@ -190,6 +195,7 @@ body>.content .logo{
   width:100%;
   height:130px;
   background-color:#1c1c1c;
+  margin-top:40px;
 }
 /*客服*/
 .support_wrap{
@@ -312,6 +318,13 @@ body>.content .logo{
   position: absolute;
   top: 15%;
   left: 72.7%;
+  cursor:pointer;
+}
+.game .quit_fullscreen{
+  position: absolute;
+  top: 15%;
+  left: 76.7%;
+  cursor:pointer;
 }
 .game .btns{
   position:absolute;
@@ -360,4 +373,232 @@ body>.content .logo{
   top: 127px;
   left: 379px;
   background-color: #fff;
+}
+/*新闻*/
+.news_list{
+  min-height:1083px;
+}
+.news_list .list{
+  position:relative;
+  margin:0 auto;
+  width:800px;
+  min-height:800px;
+  background-color:#1E1913;
+  border:1px solid #2D2009
+}
+.news_list .list .news_top{
+  width:100%;height:65px;
+  background-color:#2D2009;
+}
+.news_list .list .news_top div{
+  float:left;
+  width:181px;height:61px;
+  color:#fff;
+  font-size:16px;
+  text-align:center;
+  line-height:52px;
+  margin-left:10px;
+  cursor:pointer;
+}
+.news_list .list .news_top div:hover,.news_list .list .news_top div.active{
+  border-bottom:4px solid #ff9600;
+}
+.news_list .list .news_top div span{
+  color:#ff4e00;
+  font-size:12px;
+  display:block;
+  width:100%;
+  text-align:center;
+  margin-top:-33px;
+}
+.news_list .list .news_bottom{
+  padding-top:20px;
+}
+.news_list .list .news_bottom .news_item{
+  width:89%;
+}
+.news_list .list .news_bottom .pages{
+  position:absolute;
+  width:97%;
+  bottom:20px;
+  color:#fff;
+  text-align:center;
+}
+.news_list .list .news_bottom .pages span{
+  cursor:pointer;
+  font-size:14px;
+}
+/*新闻详情*/
+.news_detail{
+  min-height:1083px;
+}
+.news_detail .news_content {
+  width:800px;
+  position:relative;
+  margin:0 auto;
+  width:800px;
+  height:1800px;
+  background-color:#1E1913;
+  border:1px solid #2D2009;
+  color:#fff;
+  padding:20px;
+}
+.news_detail .news_content h1{
+  font-size:24px;
+  text-align:center;
+  color:#ccc;
+  margin:20px 0 20px 0;
+}
+.news_detail .news_content h2{
+  text-align:center;
+  color:#ccc;
+  padding-bottom:30px;
+  border-bottom:2px solid #ccc;
+  margin-bottom:30px;
+}
+.news_detail .news_content .detail{
+  color:#ccc;
+}
+/*充值中心*/
+.recharge_wrap{
+  min-height:700px;
+  width:1170px;
+  background-color:rgba(0,0,0,.4);
+  padding:15px;
+  position:relative;
+  margin-top:300px;
+  overflow:hidden;
+}
+.recharge_wrap .recharge{
+  width:100%;
+  height:100%;
+  background-color:#d1d1d1;
+}
+.recharge_wrap .recharge .left,.recharge_wrap .recharge .right{
+  background-color:#fff;
+  float:left;
+}
+.recharge_wrap .recharge .left{
+  width:300px;height:100%;
+}
+.recharge_wrap .recharge .right{
+  box-sizing:border-box;
+  width:300px;height:100%;
+  margin-left:10px;
+  width:860px;
+  padding-top:80px;
+  padding-left:100px;
+  position:relative;
+}
+.recharge_wrap .recharge .left .facebook{
+  display: block;
+  margin:30px auto 50px;
+}
+.recharge_wrap .recharge .server_user{
+  padding:0 15px;
+  margin-bottom:30px;
+}
+.recharge_wrap .recharge .server_user .title{
+  font-size:20px;
+  color:#f6752e;
+  background:url('../images/line_arrow.jpg') bottom center no-repeat;
+  height:30px;
+  padding-left:20px;
+  margin-bottom:10px;
+}
+.recharge .server_user .items{
+  border-bottom:1px solid #d1d1d1;
+}
+.recharge .server_user .items div{
+  padding:15px;
+  color:#666666;
+  font-size:12px;
+}
+.recharge .server_user .items div span:nth-of-type(2){
+  display:inline-block;float:right;
+}
+.recharge_wrap .recharge .left .img_btn{
+  display:block;
+  margin:20px auto;
+}
+.recharge .right .step_num{
+  width:25px;height:25px;line-height:25px;
+  text-align:center;
+  border-radius:100px;
+  border:5px solid #d3d3d3;
+  font-size:16px;
+  background-color:#ff8400;
+  position:absolute;
+  left: -18px;
+  top: -10px;
+  color:#fff;
+}
+.recharge .right .step_num.active{
+  background-color:#959595;
+}
+.recharge .right .step{
+  border-left:1px solid #f6752e;
+  padding-left:40px;
+  padding-bottom:60px;
+  position:relative;
+}
+.recharge .right .step.no_line{
+  border:none;
+}
+.recharge .right .step .title{
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+.recharge .right .input_wrap{
+  overflow:auto;
+}
+.recharge .right .step select{
+  height:40px;
+  width:240px;
+  background-color:#dedede;
+  color:#666666;
+  outline:none;
+  border:1px solid #cacaca;
+  font-size:14px;
+  padding-left:16px;
+  float:left;
+  margin-right:20px;
+}
+.recharge .right .pay_type.sea{
+  margin-top:30px;overflow:auto;
+}
+.recharge .right .pay_type.sea div{
+  float:left;
+  width:190px;height:52px;line-height:52px;
+  text-align:center;
+  border:1px solid #ff9c00;
+  margin-right:40px;
+  margin-bottom:30px;
+  cursor:pointer;
+}
+.recharge .right .pay_type.sea div.active{
+  background-color:#ff9c00;
+  color:#fff;
+}
+.recharge .right .step table,.recharge .right .step tr,.recharge .right .step td{
+  border:1px solid #c5c5c5;
+}
+.recharge .right .step td{
+  width:163px;height:40px;line-height:40px;
+  text-align:center;
+}
+.recharge .right .step tr:nth-child(2) td{
+  color:#f6752e;
+}
+.recharge .right .confirm{
+  width:200px;height:45px;line-height:45px;
+  text-align:center;
+  margin:30px auto;
+  border-radius:5px;
+  color:#fff;
+  font-size:18px;
+  background-color:#ff7800;
+  box-shadow:0 2px 5px #bc5d0a;
+  cursor:pointer;
 }

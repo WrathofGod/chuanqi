@@ -32,9 +32,9 @@
       <div class="news_wrap">
         <div class="banner">
           <div class="banner_img">
-            <img class="hidden" src="images/news.jpg" alt="">
-            <img class="hidden" src="images/news.jpg" alt="">
-            <img class="" src="images/news.jpg" alt="">
+            <img src="images/news.jpg" alt="">
+            <img style="display:none" src="images/news.jpg" alt="">
+            <img style="display:none" src="images/news.jpg" alt="">
           </div>
           <div class="tags">
             <div class="active"></div>
@@ -44,18 +44,43 @@
         </div>
         <div class="news">
           <div class="news_top">
-            <div>全部<span>All</span></div>
+            <div class="active">全部<span>All</span></div>
             <div>新闻<span>News</span></div>
             <div>公告<span>Notices</span></div>
             <div>攻略<span>Guide</span></div>
             <span>+MORE</span>
           </div>
+          <!-- 全部 -->
           <div class="news_bottom">
+            <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[全部] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          </div>
+          <!-- 新闻 -->
+           <div class="news_bottom">
             <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
             <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
             <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
             <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
             <a class="news_item">[新闻] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          </div>
+          <!-- 公告 -->
+           <div class="news_bottom">
+            <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[公告] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+          </div>
+          <!-- 攻略 -->
+           <div class="news_bottom">
+            <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
+            <a class="news_item">[攻略] 传奇来了荣耀公测 <span>【3月28日】</span></a>
           </div>
         </div>
       </div>
@@ -67,9 +92,28 @@
       console.log($(this).index());
       $('.tags div').removeClass('active');
       $(this).addClass('active')
-      $('.banner_img img').addClass('hidden')
-      $('.banner_img img').eq($(this).index()).removeClass('hidden');
+      $('.banner_img img').fadeOut()
+      $('.banner_img img').eq($(this).index()).fadeIn();
       // $(this)
     })
+    $('.news_top div').click(function(){
+      var index = $(this).index();
+      $(this).addClass('active').siblings().removeClass('active')
+      $('.news_bottom').hide().eq(index).show();
+    })
+    // 轮播
+    setInterval(function(){
+      var length = $('.tags div').length
+      var now_tag = $('.tags div.active');
+      var index = $('.tags div.active').index()
+      now_tag.removeClass('active');
+      if(index==length-1){
+        index = 0;
+      }else{
+        index++;
+      }
+      $('.tags div').eq(index).addClass('active');
+      $('.banner_img img').fadeOut().eq(index).fadeIn();
+    },5000)
   </script>
 </html>
