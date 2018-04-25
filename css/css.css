@@ -113,6 +113,12 @@ body>.content .logo{
   position:relative;
   float:left;
 }
+.news_wrap .banner_img,.news_wrap .banner_img img{
+  position:absolute;
+}
+.news_wrap .banner_img img{
+  width:656px;height:326px;
+}
 .news_wrap .tags{
   position:absolute;
   bottom:0;
@@ -601,4 +607,73 @@ body>.content .logo{
   background-color:#ff7800;
   box-shadow:0 2px 5px #bc5d0a;
   cursor:pointer;
+}
+/*礼包*/
+.giveaways_wrap{
+  height:auto;
+  width:100%;
+  background-color:rgba(0,0,0,.4);
+  padding:15px;
+  position:relative;
+  top:200px;
+  overflow:hidden;
+}
+.giveaways_wrap .giveaways{
+  width:100%;
+  background-color:#fff;
+  padding:20px;
+  overflow:hidden;
+  box-sizing: border-box;
+}
+.giveaways_wrap .row{
+  border-bottom:1px solid #c6c6c6;
+  overflow:auto;
+  padding-bottom:40px;
+  padding-top:30px;
+}
+.giveaways_wrap .row img{
+  display:block;
+  width:257px;height:202px;
+  float:left;
+  margin-left:10px;
+}
+.giveaways .row .middle{
+  margin-left:35px;
+  width:560px;
+  float:left;
+}
+.giveaways .row .middle div{
+  font-size:14px;color:#777777;
+  line-height:30px;
+}
+.giveaways .row .middle .g_name,.giveaways .row .middle .g_title{
+  color:#fe6a01;
+}
+.giveaways .row .right{
+  font-size:12px;
+  color:#666666;
+  margin-left:100px;
+  float:left;
+}
+.giveaways .row .right .g_left{
+  margin-top:50px;
+  margin-bottom:15px;
+}
+.giveaways .row .right .g_left span{
+  display:inline-block;
+  width:50px;height:5px;
+  background-color:#ea5320;
+}
+.giveaways .row .right .g_left_percent span{
+  color:#ea5320;
+}
+.giveaways .row .right .get_giveaways_btn{
+  width:145px;height:40px;line-height:40px;
+  border-radius:6px;
+  border:1px solid #b85f23;
+  background: linear-gradient(180deg, #ff8e06, #ff8e06) #ff8000;
+  color:#fff;
+  font-size:16px;
+  text-align:center;
+  margin-top:15px;
 }
