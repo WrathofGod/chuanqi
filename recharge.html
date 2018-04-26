@@ -59,20 +59,62 @@
                   <option value="2">东南亚</option>
                 </select>
                 <img src="images/mol.jpg" alt="">
+                <img src="images/mycard.jpg" alt="">
                 <!-- <img src="" alt=""> -->
               </div>
               <!-- 台湾 -->
-              <div class="pay_type taiwan"></div>
+              <div class="pay_type taiwan">
+                <div class="left">
+                  <ul>
+                    <li>信用卡</li>
+                    <li>电子钱包</li>
+                    <li>WebATM</li>
+                    <div class="active">· MyCard</div>
+                    <li>手机/市话</li>
+                    <div>· 台湾大哥大</div>
+                    <div>· 亚太电信</div>
+                    <div>· 中华市话</div>
+                    <div>· 远传电信</div>
+                    <div>· 台湾之星（威宝）</div>
+                    <div>· 中华手机</div>
+                  </ul>
+                </div>
+                <div class="right">
+                  <div class="title">选择储值面额：</div>
+                  <div class="pay_content">
+                    <div><input type="radio">50 台币 兑换 50 点</div>
+                    <div><input type="radio">150 台币 兑换 150 点</div>
+                    <div><input type="radio">300 台币 兑换 300 点</div>
+                    <div><input type="radio">500 台币 兑换 500 点</div>
+                    <div><input type="radio">1000 台币 兑换 1000 点</div>
+                    <div><input type="radio">2000 台币 兑换 2000 点</div>
+                    <div><input type="radio">3000 台币 兑换 3000 点</div>
+                    <div><input type="radio">5000 台币 兑换 5000 点</div>
+                  </div>
+                </div>
+              </div>
               <!-- 东南亚 -->
-              <div class="pay_type sea">
-                <div class="active">0.99 USD= 30 Gem</div>
-                <div>0.99 USD = 30 Gem</div>
-                <div>0.99 USD = 30 Gem</div>
-                <div>0.99 USD = 30 Gem</div>
-                <div>0.99 USD = 30 Gem</div>
-                <div>0.99 USD = 30 Gem</div>
-                <div>0.99 USD = 30 Gem</div>
-                <div>99.99 USD = 4250 Gem</div>
+              <div class="pay_type sea" style="display:none">
+                <div class="left">
+                  <ul>
+                    <li class="active">zGold - MOLPoints E-wallet</li>
+                    <li>MOLPay Credit Card</li>
+                    <li>Paypal</li>
+                    <li>FPX</li>
+                    <li>Maybank2you</li>
+                    <li>Razer zVault</li>
+                  </ul>
+                </div>
+                <div class="right">
+                  <div class="active">0.99 USD= 30 Gem</div>
+                  <div>0.99 USD = 30 Gem</div>
+                  <div>0.99 USD = 30 Gem</div>
+                  <div>0.99 USD = 30 Gem</div>
+                  <div>0.99 USD = 30 Gem</div>
+                  <div>0.99 USD = 30 Gem</div>
+                  <div>0.99 USD = 30 Gem</div>
+                  <div>99.99 USD = 4250 Gem</div>
+                </div>
               </div>
             </div>
             <!-- 第三步 -->
@@ -96,7 +138,13 @@
     <div class="footer"></div>
   </body>
   <script type="text/javascript">
-    $('.sea div').click(function(){
+    $('.sea .right div').click(function(){
+      $(this).addClass('active').siblings().removeClass('active')
+    })
+    $('.sea li').click(function(){
+      $(this).addClass('active').siblings().removeClass('active')
+    })
+    $('.taiwan ul div').click(function(){
       $(this).addClass('active').siblings().removeClass('active')
     })
   </script>

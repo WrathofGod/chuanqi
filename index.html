@@ -85,7 +85,24 @@
         </div>
       </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer_wrap">
+        <img src="images/rainbow_horse_logo.png" class="c_logo">
+        <div class="icons">
+          <span>服务条款</span>
+          <span>合作提案</span>
+          <span>客服中心</span>
+        </div>
+        <div class="copyright">
+          © 2018 www.gm99.com All Rights Reserved. 優勢領航科技有限公司
+        </div>
+      </div>
+    </div>
+    <div class="mask">
+      <div class="rule">
+        <div class="close">+</div>
+      </div>
+    </div>
   </body>
   <script>
     $('.tags div').click(function(){
@@ -115,5 +132,16 @@
       $('.tags div').eq(index).addClass('active');
       $('.banner_img img').hide().eq(index).fadeIn();
     },5000)
+    // 底下跳转
+    $('.footer .icons span').eq(2).click(function(){
+      window.location.href="support.html";
+    })
+    // 服务条款
+    $('.footer .icons span').eq(0).click(function(){
+      $('.mask').show()
+    })
+    $('.rule .close').click(function(){
+      $('.mask').hide();
+    })
   </script>
 </html>
