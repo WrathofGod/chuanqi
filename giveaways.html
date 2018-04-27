@@ -6,6 +6,7 @@
   <title>我是传奇-礼包领取</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/css.css">
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <body>
     <div class="header">
       <div class="content">
@@ -51,9 +52,27 @@
             </div>
           </div>
         </div>
-
+      </div>
+      <!-- 礼包结束 -->
+      <div class="mask" style="display:block">
+        <div class="giveaways_popup popup">
+          <div class="close">+</div>
+          <div class="title">恭喜！领取成功</div>
+          <div class="code">您的礼包码：AA123456789 <span>点击复制</span></div>
+          <div class="use">礼包码使用方式：礼包码使用方式礼包码使用方式礼包码使用方式礼包码使用方式礼包码使用方式礼包码使用方式礼包码使用方式</div>
+        </div>
       </div>
     </div>
     <div class="footer"></div>
   </body>
+<script>
+  $('.close').click(function(){
+    $('.popup').hide();
+    $('.mask').hide();
+  })
+  $('.get_giveaways_btn').click(function(){
+    $('.popup').show();
+    $('.mask').show();
+  })
+</script>
 </html>

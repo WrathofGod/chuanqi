@@ -20,6 +20,16 @@ a{
   background-color:rgba(0,0,0,.5);
   display:none;
 }
+.popup .close{
+  font-size: 40px;
+  color: #000;
+  transform: rotate(45deg);
+  width: 40px;
+  height: 40px;
+  float: right;
+  cursor:pointer;
+  text-align:center;
+}
 .hidden{
   display:none !important;
 }
@@ -778,6 +788,34 @@ body>.content .logo{
   box-shadow:0 2px 5px #bc5d0a;
   cursor:pointer;
 }
+.pay_popup{
+  width:360px;height:200px;
+  border-radius:5px;
+  background-color:#fff;
+  position:fixed;
+  top:400px;
+  left:450px;
+}
+.pay_popup .title{
+  font-size:14px;
+  text-align:center;
+  width:100%;
+  margin-top:70px;
+  margin-bottom:50px;
+}
+.pay_popup .btn{
+  background: linear-gradient(180deg, #ff893f, #f95f1d) #f95f1d;
+  border-radius: 5px;
+  width:100px;height:30px;
+  line-height:30px;
+  color:#fff;
+  font-size:12px;
+  border:1px solid #f95f1d;
+  text-align:center;
+  margin-left:30px;
+  float:left;
+  cursor:pointer;
+}
 /*礼包*/
 .giveaways_wrap{
   height:auto;
@@ -846,4 +884,38 @@ body>.content .logo{
   font-size:16px;
   text-align:center;
   margin-top:15px;
+  cursor:pointer;
+}
+.giveaways_popup{
+  position:fixed;
+  width:400px;min-height:212px;
+  background-color:#fff;
+  top: 300px;
+  left: 460px;
+  box-sizing:border-box;
+}
+.giveaways_popup .title{
+  color:#fe6a01;
+  font-size:18px;
+  text-align:center;
+  margin-top:60px;
+}
+.giveaways_popup .code{
+  font-size:16px;
+  margin-top:10px;
+  color:#fe6a01;
+  text-align:center;
+}
+.giveaways_popup .code span{
+  color:#014efe;
+  cursor:pointer;
+  margin-left:10px;
+}
+.giveaways_popup .use{
+  color:#979797;
+  margin-top:10px;
+  width:80%;
+  margin-left:40px;
+  font-size:12px;
+  line-height:15px;
 }
