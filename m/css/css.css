@@ -11,6 +11,25 @@ body{
 a{
   text-decoration:none ;
 }
+.mask{
+  width:100%;
+  height:100%;
+  z-index:2;
+  position:fixed;
+  top:0;left:0;
+  background-color:rgba(0,0,0,.5);
+  display:none;
+}
+.popup .close{
+  font-size: 0.4px;
+  color: #000;
+  transform: rotate(45deg);
+  width: 0.4rem;
+  height: 0.4rem;
+  float: right;
+  cursor:pointer;
+  text-align:center;
+}
 .header{
   width:7rem;
   height:0.6rem;
@@ -133,4 +152,101 @@ a{
 }
 .footer a.active{
   background-color:#ff8a00;
+}
+/*礼包*/
+.giveaways{
+  background-color:#fff;
+}
+.giveaways .block{
+  width:100%;
+  background-color:#fff;
+  overflow:hidden;
+  padding-bottom:0.2rem;
+}
+.giveaways .block .left,.giveaways .block .right{
+  float:left;
+}
+.giveaways .block .left{
+  width:2.85rem;
+}
+.giveaways .block .right{
+  width:4.15rem;
+}
+.giveaways .block .left img{
+  width:2.57rem;height:2.78rem;
+  display:block;
+  margin:0.4rem 0 0 0.16rem;
+}
+.giveaways .block .left .bottom{
+  color:#666666;font-size: 0.12rem;
+  margin-top:0.12rem;
+  margin-left:0.16rem;
+}
+.giveaways .block .left .bottom .g_left,.giveaways .block .left .bottom .g_left_percent{
+  display:inline-block;
+}
+.giveaways .block .left .bottom .g_left span{
+  width:0.55rem;height:0.03rem;
+  display:inline-block;
+  margin-top:-0.03rem;
+  background-color:#ea5320;
+}
+.giveaways .block .left .bottom .g_left_percent span{
+  color:#ea5320;
+}
+.giveaways .block .right{
+  font-size:0.14rem;
+  margin-top:0.4rem;
+}
+.giveaways .block .right .g_title{
+  color:#fe6a01;
+  margin-bottom:0.2rem;
+}
+.giveaways .block .right .g_content{
+  color:#777777;
+  line-height:0.3rem;
+}
+.giveaways .block .right .g_btn{
+  color:#fff;
+  background: linear-gradient(180deg, #ff8e06, #fe6201) #fe6201;
+  border:1px solid #fe6201;
+  width:1.46rem;height:0.4rem;line-height:0.4rem;
+  text-align:center;
+  border-radius:0.05rem;
+  float:right;
+  margin-top:0rem;
+  margin-right:0.2rem;
+}
+.giveaways_popup{
+  position:fixed;
+  width:4rem;min-height:2.12rem;
+  background-color:#fff;
+  top: 3rem;
+  left: 1.6rem;
+  box-sizing:border-box;
+}
+.giveaways_popup .title{
+  color:#fe6a01;
+  font-size:0.18rem;
+  text-align:center;
+  margin-top:0.6rem;
+}
+.giveaways_popup .code{
+  font-size:0.16rem;
+  margin-top:0.1rem;
+  color:#fe6a01;
+  text-align:center;
+}
+.giveaways_popup .code span{
+  color:#014efe;
+  cursor:pointer;
+  margin-left:0.1rem;
+}
+.giveaways_popup .use{
+  color:#979797;
+  margin-top:0.1rem;
+  width:80%;
+  margin-left:0.4rem;
+  font-size:0.12rem;
+  line-height:0.15rem;
 }

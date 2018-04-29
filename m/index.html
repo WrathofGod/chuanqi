@@ -115,5 +115,10 @@
       el: '.swiper-pagination',
     },
   })
+   $('.news_title div').click(function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.news_wrap .news_main').hide();
+    $('.news_wrap .news_main').eq($(this).index()).show();
+   })
 </script>
 </html>
