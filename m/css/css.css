@@ -1,12 +1,14 @@
 
 html{
   background-color:#000;
+
 }
 body{
   background-color:#000;
   background:url(../images/bg.jpg) center top no-repeat;
   overflow:auto;
   padding:0;
+  font-size:0.12rem;
 }
 a{
   text-decoration:none ;
@@ -45,9 +47,10 @@ a{
 .index .main{
   width:7rem;
   height:9.79rem;
-  background:url(../images/bg.jpg) top center no-repeat;
+  background:url(../images/bg.jpg) top center no-repeat #000;
   background-size:100%;
   position:relative;
+  overflow:auto;
 }
 .index .main a{
   display:block;
@@ -64,6 +67,13 @@ a{
   background:url(../images/download.png) center no-repeat;
   background-size:100%;
   top:81%;
+}
+.index .main .logo{
+  width: 2.02rem;
+  display: block;
+  position: absolute;
+  left: 38%;
+  top: 0%;
 }
 .index .banner{
   width:7rem;
@@ -249,4 +259,25 @@ a{
   margin-left:0.4rem;
   font-size:0.12rem;
   line-height:0.15rem;
+}
+/*新闻详情*/
+.news_content{
+  width:90%;
+  border-radius:0.08rem;
+  background-color:#2D2009;
+  color:#fff;
+  padding:0.15rem 0.15rem 0.4rem 0.15rem;
+  margin:1.5rem auto;
+  min-height:8rem;
+}
+.news_content h1{
+  text-align:center;
+  margin:0.3rem 0;
+}
+.news_content h2{
+  text-align:center;
+  color:#ccc;
+  padding-bottom:0.3rem;
+  border-bottom:0.02rem solid #ccc;
+  margin-bottom:0.3rem;
 }

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html ng-app="ttnba">
+<head>
+  <title>我是传奇-新闻详情</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- windows phone 点击无高光 -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="js/swiper-4.2.2/dist/css/swiper.min.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/swiper-4.2.2/dist/js/swiper.min.js"></script>
+
+  <!-- 设置 html 字体 -->
+  <script type="text/javascript">
+    function size() {
+      var _screenWidth = document.documentElement.clientWidth < 300 ? 300 : document.documentElement.clientWidth,
+        _UIWidth = 700,
+        _fontSize = _screenWidth / _UIWidth * 100;
+      document.documentElement.style.fontSize = _fontSize + 'px';
+    }
+    size();
+    window.onresize = function() {
+      size();
+    }
+  </script>
+</head>
+<body class="index news_detail">
+  <div class="header">传奇来了</div>
+  <div class="main">
+    <img src="images/logo.png" class="logo">
+    <div class="news_content">
+      <h1>标题</h1>
+      <h2>2014-10-28 20:15:41</h2>
+      <div class="detail">
+        内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <a>礼包领取</a>
+    <a>储值中心</a>
+    <a>联系客服</a>
+    <a>FB粉丝团</a>
+    <a class="active">首页</a>
+  </div>
+</body>
+</html>
