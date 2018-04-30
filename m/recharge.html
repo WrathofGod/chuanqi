@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html ng-app="ttnba">
+<head>
+  <title>我是传奇-手机站</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- windows phone 点击无高光 -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/css.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+  <!-- 设置 html 字体 -->
+  <script type="text/javascript">
+    function size() {
+      var _screenWidth = document.documentElement.clientWidth < 300 ? 300 : document.documentElement.clientWidth,
+        _UIWidth = 700,
+        _fontSize = _screenWidth / _UIWidth * 100;
+      document.documentElement.style.fontSize = _fontSize + 'px';
+    }
+    size();
+    window.onresize = function() {
+      size();
+    }
+  </script>
+</head>
+<body class="recharge">
+  <div class="header">传奇来了</div>
+  <div class="mask" style="display:none">
+    <!-- 支付成功失败 -->
+    <div class="popup pay_popup">
+      <div class="close">+</div>
+      <div class="title">支付已取消</div>
+      <!-- <div class="title">支付已完成，游戏发货需求5分钟，请到游戏内检查</div> -->
+      <div class="btn" style="margin-left:0.65rem;">联系客服</div>
+      <div class="btn">完成</div>
+    </div>
+    <!-- 充值记录 -->
+    <div class="history" style="display:none">
+      <div>xxx时候冲了xxx点</div>
+      <div>xxx时候冲了xxx点</div>
+      <div>xxx时候冲了xxx点</div>
+      <div>xxx时候冲了xxx点</div>
+      <div>xxx时候冲了xxx点</div>
+      <div>xxx时候冲了xxx点</div>
+    </div>
+  </div>
+  <!-- 客服中心 -->
+  <div class="recharge">
+    <div class="right">
+      <img class="facebook" src="images/facebook.png">
+      <div class="history">
+        账号：123123123
+        <span>储值记录</span>
+      </div>
+      <!-- 第一步 -->
+      <div class="step">
+        <div class="step_num">1</div>
+        <div class="title">储蓄信息</div>
+        <div class="input_wrap">
+          <select name="" id="">
+            <option value="">请选择服务器</option>
+          </select>
+          <select name="" id="">
+            <option value="">请选择角色</option>
+          </select>
+        </div>
+      </div>
+      <!-- 第二步 -->
+      <div class="step">
+        <div class="step_num">2</div>
+        <div class="title">支付方式</div>
+        <div>
+          <select name="" id="pay_type">
+            <option value="1">台湾</option>
+            <option value="2">东南亚</option>
+          </select>
+          <img src="images/mol.jpg" alt="">
+          <img src="images/mycard.jpg" alt="">
+          <!-- <img src="" alt=""> -->
+        </div>
+        <!-- 台湾 -->
+        <div class="pay_type taiwan">
+          <div class="left">
+            <ul>
+              <li>信用卡</li>
+              <li>电子钱包</li>
+              <li>WebATM</li>
+              <div class="active">· MyCard</div>
+              <li>手机/市话</li>
+              <div>· 台湾大哥大</div>
+              <div>· 亚太电信</div>
+              <div>· 中华市话</div>
+              <div>· 远传电信</div>
+              <div>· 台湾之星（威宝）</div>
+              <div>· 中华手机</div>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="title">选择储值面额：</div>
+            <div class="pay_content">
+              <div><input type="radio">50 台币 兑换 50 点</div>
+              <div><input type="radio">150 台币 兑换 150 点</div>
+              <div><input type="radio">300 台币 兑换 300 点</div>
+              <div><input type="radio">500 台币 兑换 500 点</div>
+              <div><input type="radio">1000 台币 兑换 1000 点</div>
+              <div><input type="radio">2000 台币 兑换 2000 点</div>
+              <div><input type="radio">3000 台币 兑换 3000 点</div>
+              <div><input type="radio">5000 台币 兑换 5000 点</div>
+            </div>
+          </div>
+        </div>
+        <!-- 东南亚 -->
+        <div class="pay_type sea" style="display:none">
+          <div class="left">
+            <ul>
+              <li class="active">zGold - MOLPoints E-wallet</li>
+              <li>MOLPay Credit Card</li>
+              <li>Paypal</li>
+              <li>FPX</li>
+              <li>Maybank2you</li>
+              <li>Razer zVault</li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="active">0.99 USD= 30 Gem</div>
+            <div>0.99 USD = 30 Gem</div>
+            <div>0.99 USD = 30 Gem</div>
+            <div>0.99 USD = 30 Gem</div>
+            <div>0.99 USD = 30 Gem</div>
+            <div>0.99 USD = 30 Gem</div>
+            <div>0.99 USD = 30 Gem</div>
+            <div>99.99 USD = 4250 Gem</div>
+          </div>
+        </div>
+      </div>
+      <!-- 第三步 -->
+      <div class="step no_line">
+        <div class="step_num">3</div>
+        <div class="title">确认信息</div>
+        <table>
+          <tr>
+            <td>账号</td><td>服务器</td><td>角色</td><td>储值内容</td>
+          </tr>
+          <tr>
+            <td>玩家账号</td><td>111</td><td>111</td><td>111</td>
+          </tr>
+        </table>
+      </div>
+      <div class="confirm">确认并支付</div>
+    </div>
+  </div>
+  <div class="footer">
+    <a>礼包领取</a>
+    <a>储值中心</a>
+    <a>联系客服</a>
+    <a>FB粉丝团</a>
+    <a class="active">首页</a>
+  </div>
+</body>
+<script type="text/javascript">
+  $('.sea .right div').click(function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+  $('.sea li').click(function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+  $('.taiwan ul div').click(function(){
+    $(this).addClass('active').siblings().removeClass('active')
+  })
+  $('#pay_type').change(function(){
+    $(this).val()==2 && $('.sea').show() && $('.taiwan').hide()
+    $(this).val()==1 && $('.sea').hide() && $('.taiwan').show()
+  })
+</script>
+</html>

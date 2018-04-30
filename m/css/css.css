@@ -23,7 +23,7 @@ a{
   display:none;
 }
 .popup .close{
-  font-size: 0.4px;
+  font-size: 0.4rem;
   color: #000;
   transform: rotate(45deg);
   width: 0.4rem;
@@ -106,7 +106,7 @@ a{
   font-size:0.14rem;
   height:0.62rem;line-height:0.62rem;
   color:#323333;
-  border-bottom:1px dashed #c1c1c1;
+  border-bottom:1rem dashed #c1c1c1;
 }
 .index .news_wrap .news_main a i{
   font-style: normal;
@@ -280,4 +280,275 @@ a{
   padding-bottom:0.3rem;
   border-bottom:0.02rem solid #ccc;
   margin-bottom:0.3rem;
+}
+/*充值中心*/
+.recharge{
+  width:100%;
+  height:100%;
+  background-color:#d1d1d1;
+}
+.recharge>.right{
+  box-sizing: border-box;
+  width: 7rem;
+  padding-top: 0.10rem;
+  padding-left:0.2rem;
+  position: relative;
+  background-color:#fff;
+  float:left;
+}
+.recharge .right .facebook{
+  display:block;
+  width:3rem;
+}
+.recharge .right .history{
+  width:96%;
+  height:0.5rem;line-height:0.47rem;
+  margin:0.2rem 0;
+  border-radius:0.05rem;
+  background-color:#dedede;
+  padding-left: 0.3rem;
+  text-align:left;
+  color:#000;
+  font-size:0.14rem;
+  box-sizing:border-box;
+  border:1px solid #cacaca;
+}
+.recharge .right .history span{
+  float:right;
+  display:inline-block;
+  height:0.45rem;
+  background-color:#e45b2c;
+  border-radius:0.05rem;
+  font-size:0.14rem;
+  color:#fff;
+  border:1px solid #c02c04;
+  padding:0 0.3rem 0 0.5rem;
+  background-image:url(../images/history_arrow.png);
+  background-repeat:no-repeat;
+  background-size:0.3rem;
+  background-position:0.1rem center;
+}
+.recharge>.right .step_num{
+  width:0.25rem;height:0.25rem;line-height:0.25rem;
+  text-align:center;
+  border-radius:1rem;
+  border:0.05rem solid #d3d3d3;
+  font-size:0.16rem;
+  background-color:#ff8400;
+  position:absolute;
+  left: -0.18rem;
+  top: -0.10rem;
+  color:#fff;
+}
+.recharge>.right .step_num.active{
+  background-color:#959595;
+}
+.recharge .right .step{
+  border-left:1px solid #f6752e;
+  padding-left:0.4rem;
+  padding-bottom:0.6rem;
+  position:relative;
+}
+.recharge>.right .step.no_line{
+  border:none;
+}
+.recharge>.right .step .title{
+  font-size:0.14rem;
+  font-weight:bold;
+  margin-bottom:0.20rem;
+}
+.recharge>.right .input_wrap{
+  overflow:auto;
+}
+.recharge>.right .step select{
+  height:0.40rem;
+  width:2.40rem;
+  background-color:#dedede;
+  color:#666666;
+  outline:none;
+  border:1px solid #cacaca;
+  font-size:0.14rem;
+  padding-left:0.16rem;
+  float:left;
+  margin-right:0.2rem;
+}
+.recharge>.right .pay_type{
+  margin-top:0.3rem;overflow:auto;
+}
+.recharge>.right .pay_type.taiwan .left{
+  float:left;
+  width:1.70rem;
+}
+.recharge>.right .pay_type.taiwan .left ul{
+  border:1px solid #bcbcbc;
+}
+.recharge>.right .pay_type.taiwan .left ul li,.recharge>.right .pay_type.taiwan .left ul div{
+  width: 100%;
+  border-bottom: 1px solid #bcbcbc;
+  font-size: 0.14rem;
+  height: 0.54rem;
+  line-height: 0.54rem;
+  text-align: center;
+  color: #7f7c7d;
+  cursor: pointer;
+  background-position: 0.15rem center;
+  background-repeat: no-repeat;
+  background-size: 0.23rem;
+  padding-left: 0.45rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+.recharge>.right .pay_type.taiwan .left ul div{
+  text-align:left;
+  padding-left:0.4rem;
+  box-sizing: border-box;
+}
+.recharge>.right .pay_type.taiwan .left ul div.active{
+  color:#e55f2e;
+}
+.recharge>.right .pay_type.taiwan .left ul div:nth-last-child{
+  border:bottom:0;
+}
+.recharge>.right .pay_type.taiwan .left ul li:nth-child(1){
+  background-image:url(../images/pay/icon_1.png);
+}
+.recharge>.right .pay_type.taiwan .left ul li:nth-child(2){
+  background-image:url(../images/pay/icon_2.png);
+}
+.recharge>.right .pay_type.taiwan .left ul li:nth-child(3){
+  background-image:url(../images/pay/icon_3.png);
+}
+.recharge>.right .pay_type.taiwan .left ul li:nth-child(5){
+  background-image:url(../images/pay/icon_4.png);
+  background-size:0.18rem;
+}
+.recharge>.right .pay_type.taiwan .right{
+  float:left;
+  width:4.4rem;
+  margin-left:0.15rem;
+}
+.recharge>.right .pay_type.taiwan .right .title{
+  width:100%;
+  height:0.5rem;
+  line-height:0.5rem;
+  color:#fff;
+  padding-left:0.15rem;
+  box-sizing:border-box;
+  background-color:#e55f2e;
+}
+.recharge>.right .pay_type.taiwan .right .pay_content div{
+  width:100%;
+  margin-bottom:0.2rem;
+  font-size:0.12rem;
+}
+.recharge>.right .pay_type.sea .left{
+  float:left;
+  width:1.85rem;
+}
+.recharge>.right .pay_type.sea .left ul{
+  border:1px solid #bcbcbc;
+}
+.recharge>.right .pay_type.sea .left ul li{
+  width:100%;
+  border-bottom:1px solid #bcbcbc;
+  font-size:0.14rem;
+  height:0.54rem;
+  line-height:0.18rem;
+  text-align:center;
+  color:#7f7c7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  cursor:pointer;
+}
+.recharge>.right .pay_type.sea .left ul li.active{
+  color:#dd4a24;
+  border-left:0.05rem solid #f6752e;
+  width:1.79rem;
+}
+.recharge>.right .pay_type.sea .right{
+  float:left;
+  width:4.3rem;
+  margin-left:0.2rem;
+}
+.recharge>.right .pay_type.sea .right div{
+  float:left;
+  width:2rem;height:0.52rem;line-height:0.52rem;
+  font-size:0.12rem;
+  text-align:center;
+  border:1px solid #ff9c00;
+  margin-right:0.20rem;
+  margin-bottom:0.20rem;
+  cursor:pointer;
+}
+.recharge>.right .pay_type.sea .right div:nth-of-type(2n){
+  margin-right:0;
+}
+.recharge>.right .pay_type.sea .right div.active{
+  background-color:#ff9c00;
+  color:#fff;
+}
+.recharge>.right .step table,.recharge>.right .step tr,.recharge>.right .step td{
+  border:1px solid #c5c5c5;
+}
+.recharge>.right .step td{
+  width:1.5rem;height:0.40rem;line-height:0.40rem;
+  text-align:center;
+}
+.recharge>.right .step tr:nth-child(2) td{
+  color:#f6752e;
+}
+.recharge>.right .confirm{
+  width:2.00rem;height:0.45rem;line-height:0.45rem;
+  text-align:center;
+  margin:0.3rem auto;
+  border-radius:0.05rem;
+  color:#fff;
+  font-size:0.18rem;
+  background-color:#ff7800;
+  box-shadow:0 0.02rem 0.05rem #bc5d0a;
+  cursor:pointer;
+}
+.pay_popup{
+  width:3.60rem;height:2.00rem;
+  border-radius:0.05rem;
+  background-color:#fff;
+  position:fixed;
+  top: 40%;
+  left: 28%;
+}
+.pay_popup .title{
+  font-size:0.14rem;
+  text-align:center;
+  width:100%;
+  margin-top:0.70rem;
+  margin-bottom:0.50rem;
+}
+.pay_popup .btn{
+  background: linear-gradient(180deg, #ff893f, #f95f1d) #f95f1d;
+  border-radius: 0.05rem;
+  width:1.00rem;height:0.30rem;
+  line-height:0.30rem;
+  color:#fff;
+  font-size:0.12rem;
+  border:1px solid #f95f1d;
+  text-align:center;
+  margin-left:0.3rem;
+  float:left;
+  cursor:pointer;
+}
+.mask .history{
+  box-sizing:border-box;
+  width:70%;
+  height:50%;
+  overflow:auto;
+  border-radius:0.08rem;
+  background-color:#fff;
+  padding:0.3rem;
+  font-size:0.14rem;
+  position:fixed;
+  top:20%;
+  left:15%;
+  line-height:0.3rem;
 }
