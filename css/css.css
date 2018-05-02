@@ -649,7 +649,7 @@ body>.content .logo{
 .recharge>.right .input_wrap{
   overflow:auto;
 }
-.recharge>.right .step select{
+.recharge>.right .step select,.recharge>.right .step input{
   height:40px;
   width:240px;
   background-color:#dedede;
@@ -660,6 +660,10 @@ body>.content .logo{
   padding-left:16px;
   float:left;
   margin-right:20px;
+}
+.recharge>.right .step input{
+  background-color:#fff;
+  color:#000;
 }
 .recharge>.right .pay_type{
   margin-top:30px;overflow:auto;

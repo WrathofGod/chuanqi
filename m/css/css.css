@@ -360,7 +360,7 @@ a{
 .recharge>.right .input_wrap{
   overflow:auto;
 }
-.recharge>.right .step select{
+.recharge>.right .step select,.recharge>.right .step input{
   height:0.40rem;
   width:2.40rem;
   background-color:#dedede;
@@ -371,6 +371,10 @@ a{
   padding-left:0.16rem;
   float:left;
   margin-right:0.2rem;
+}
+.recharge>.right .step input{
+  background-color:#fff;
+  color:#000;
 }
 .recharge>.right .pay_type{
   margin-top:0.3rem;overflow:auto;
