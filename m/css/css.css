@@ -360,7 +360,7 @@ a{
 .recharge>.right .input_wrap{
   overflow:auto;
 }
-.recharge>.right .step select,.recharge>.right .step input{
+.recharge>.right .step select,.recharge>.right .step input[type="text"]{
   height:0.40rem;
   width:2.40rem;
   background-color:#dedede;
@@ -372,7 +372,7 @@ a{
   float:left;
   margin-right:0.2rem;
 }
-.recharge>.right .step input{
+.recharge>.right .step input[type="text"]{
   background-color:#fff;
   color:#000;
 }

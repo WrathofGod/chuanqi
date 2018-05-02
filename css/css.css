@@ -649,7 +649,7 @@ body>.content .logo{
 .recharge>.right .input_wrap{
   overflow:auto;
 }
-.recharge>.right .step select,.recharge>.right .step input{
+.recharge>.right .step select,.recharge>.right .step input[type='text']{
   height:40px;
   width:240px;
   background-color:#dedede;
@@ -661,7 +661,7 @@ body>.content .logo{
   float:left;
   margin-right:20px;
 }
-.recharge>.right .step input{
+.recharge>.right .step input[type='text']{
   background-color:#fff;
   color:#000;
 }
