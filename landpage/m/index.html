@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html ng-app="ttnba">
+<head>
+  <title>我是传奇-手机站</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <!-- 是否启用 WebApp 全屏模式 -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- uc强制竖屏 -->
+  <meta name="screen-orientation" content="portrait">
+  <!-- QQ强制竖屏 -->
+  <meta name="x5-orientation" content="portrait">
+  <!-- UC强制全屏 -->
+  <meta name="full-screen" content="yes">
+  <!-- QQ强制全屏 -->
+  <meta name="x5-fullscreen" content="true">
+  <!-- UC应用模式 -->
+  <meta name="browsermode" content="application">
+  <!-- QQ应用模式 -->
+  <meta name="x5-page-mode" content="app">
+  <!-- windows phone 点击无高光 -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/css.css">
+  <link rel="stylesheet" href="js/swiper-4.2.2/dist/css/swiper.min.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/swiper-4.2.2/dist/js/swiper.min.js"></script>
+
+  <!-- 设置 html 字体 -->
+  <script type="text/javascript">
+    function size() {
+      var _screenWidth = document.documentElement.clientWidth < 300 ? 300 : document.documentElement.clientWidth,
+        _UIWidth = 700,
+        _fontSize = _screenWidth / _UIWidth * 100;
+      document.documentElement.style.fontSize = _fontSize + 'px';
+    }
+    size();
+    window.onresize = function() {
+      size();
+    }
+  </script>
+</head>
+<body class="index">
+  <div class="header">传奇来了</div>
+  <div class="main">
+    <img src="images/logo.png" class="logo">
+    <a class="btn start"></a>
+    <a class="facebook"></a>
+  </div>
+
+
+</body>
+</html>

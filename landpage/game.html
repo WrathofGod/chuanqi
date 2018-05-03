@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>我是传奇</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/css.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <body class="game">
+    <div class="game_wrap">
+      <img class="fullscreen" src="images/fullscreen.jpg">
+      <img class="quit_fullscreen" style="display:none" src="images/quit_fullscreen.jpg">
+      <div class="btns">
+        <div class="favorite">添加收藏</div>
+        <div class="desktop">添加桌面</div>
+      </div>
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+  </body>
+  <script>
+    $('.back').click(function(){
+      window.location.href="index.html"
+    })
+    $('.fullscreen').click(function(){
+      $('iframe').width('700px').height('100%').css({
+        top:'0',left:'221px'
+      })
+      $('.btns').css({
+        left:'1%'
+      })
+      $('.fullscreen').hide();
+      $('.quit_fullscreen').show();
+    })
+    $('.quit_fullscreen').click(function(){
+      $(this).hide();
+      $('.fullscreen').show();
+      $('iframe').width('478px').height('828px').css({
+        top: '127px',
+        left: '379px'
+      })
+      $('.btns').css({
+        left:'14%'
+      })
+    })
+  </script>
+</html>

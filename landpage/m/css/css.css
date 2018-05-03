@@ -58,6 +58,12 @@ a{
   position:absolute;
   left:32%;
 }
+.index .main .facebook{
+  background:url(../images/facebook.png) no-repeat center;
+  width:2.76rem;height:0.58rem;
+  background-size:100%;
+  top:61%;
+}
 .index .main a.start{
   background:url(../images/start.png) center no-repeat;
   background-size:100%;
@@ -106,7 +112,7 @@ a{
   font-size:0.14rem;
   height:0.62rem;line-height:0.62rem;
   color:#323333;
-  border-bottom:0.01rem dashed #c1c1c1;
+  border-bottom:1rem dashed #c1c1c1;
 }
 .index .news_wrap .news_main a i{
   font-style: normal;
