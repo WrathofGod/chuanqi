@@ -401,13 +401,14 @@ body>.content .logo{
 }
 /*游戏*/
 .game{
-  background:url(../images/game_bg.jpg) center top no-repeat;
+
 }
 .game .game_wrap{
   width:1200px;
   height:1080px;
   margin:0 auto;
   position:relative;
+  background:url(../images/game_bg.jpg) center top no-repeat;
 }
 .game .fullscreen{
   position: absolute;
