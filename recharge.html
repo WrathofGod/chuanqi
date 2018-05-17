@@ -18,8 +18,8 @@
     <div class="content">
       <img src="images/logo.png" class="logo" style="top:-390px">
       <!-- 客服中心 -->
-      <div class="recharge_wrap">
-        <div class="recharge">
+      <div class="recharge_wrap clearfix">
+        <div class="recharge clearfix">
           <div class="left">
             <img class="facebook" src="images/facebook.png" alt="">
             <div class="server_user">
@@ -64,17 +64,20 @@
               <div class="pay_type taiwan">
                 <div class="left">
                   <ul>
-                    <li>信用卡</li>
-                    <li>电子钱包</li>
-                    <li>WebATM</li>
-                    <div class="active">· MyCard</div>
-                    <li>手机/市话</li>
-                    <div>· 台湾大哥大</div>
-                    <div>· 亚太电信</div>
-                    <div>· 中华市话</div>
-                    <div>· 远传电信</div>
-                    <div>· 台湾之星（威宝）</div>
-                    <div>· 中华手机</div>
+                    <li class="credit" state="credit">信用卡</li>
+                    <div father="credit">· 信用卡</div>
+                    <li class="ewallet" state="ewallet">电子钱包</li>
+                    <div father="ewallet">· 台湾大哥大</div>
+                    <li class="webatm" state="webatm">WebATM</li>
+                    <div father="webatm">· WebATM</div>
+                    <div father="webatm" class="active">· MyCard</div>
+                    <li class="phone" state="phone">手机/市话</li>
+                    <div father="phone">· 台湾大哥大</div>
+                    <div father="phone">· 亚太电信</div>
+                    <div father="phone">· 中华市话</div>
+                    <div father="phone">· 远传电信</div>
+                    <div father="phone">· 台湾之星（威宝）</div>
+                    <div father="phone">· 中华手机</div>
                   </ul>
                 </div>
                 <div class="right">
@@ -154,6 +157,14 @@
     $('.taiwan ul div').click(function(){
       $(this).addClass('active').siblings().removeClass('active')
     })
+    $('.taiwan ul li').click(function(){
+      $(this).addClass('active');
+      state = $(this).attr('state');
+      $(".taiwan ul div").each(function(e){
+        $(this).hide();
+        $(this).attr('father')==state && $(this).show();
+      })
+    });
     $('#pay_type').change(function(){
       $(this).val()==2 && $('.sea').show() && $('.taiwan').hide()
       $(this).val()==1 && $('.sea').hide() && $('.taiwan').show()

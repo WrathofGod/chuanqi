@@ -1,4 +1,5 @@
-
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
 html{
   background-color:#000;
 }
@@ -557,17 +558,17 @@ body>.content .logo{
 }
 /*充值中心*/
 .recharge_wrap{
-  height:1280px;
+  height:auto;
   width:1170px;
   background-color:rgba(0,0,0,.4);
   padding:15px;
   position:relative;
   margin-top:300px;
-  overflow:hidden;
+  /*overflow:hidden;*/
 }
 .recharge_wrap .recharge{
   width:100%;
-  height:100%;
+  min-height:100%;
   background-color:#d1d1d1;
 }
 .recharge_wrap .recharge>.left,.recharge_wrap .recharge>.right{
@@ -580,7 +581,7 @@ body>.content .logo{
 .recharge_wrap .recharge>.right{
   box-sizing: border-box;
   width: 300px;
-  height: 100%;
+  min-height: 100%;
   margin-left: 10px;
   width: 860px;
   padding-top: 80px;
@@ -688,10 +689,14 @@ body>.content .logo{
   background-position:20px center;
   background-repeat:no-repeat;
 }
+.recharge>.right .pay_type.taiwan .left ul li.active{
+  color:#e55f2e;
+}
 .recharge>.right .pay_type.taiwan .left ul div{
   text-align:left;
   padding-left:40px;
   box-sizing: border-box;
+  display:none;
 }
 .recharge>.right .pay_type.taiwan .left ul div.active{
   color:#e55f2e;
@@ -699,16 +704,16 @@ body>.content .logo{
 .recharge>.right .pay_type.taiwan .left ul div:nth-last-child{
   border:bottom:0;
 }
-.recharge>.right .pay_type.taiwan .left ul li:nth-child(1){
+.recharge>.right .pay_type.taiwan .left ul li.credit{
   background-image:url(../images/pay/icon_1.png);
 }
-.recharge>.right .pay_type.taiwan .left ul li:nth-child(2){
+.recharge>.right .pay_type.taiwan .left ul li.ewallet{
   background-image:url(../images/pay/icon_2.png);
 }
-.recharge>.right .pay_type.taiwan .left ul li:nth-child(3){
+.recharge>.right .pay_type.taiwan .left ul li.webatm{
   background-image:url(../images/pay/icon_3.png);
 }
-.recharge>.right .pay_type.taiwan .left ul li:nth-child(5){
+.recharge>.right .pay_type.taiwan .left ul li.phone{
   background-image:url(../images/pay/icon_4.png);
 }
 .recharge>.right .pay_type.taiwan .right{
